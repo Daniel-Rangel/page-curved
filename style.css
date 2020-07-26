@@ -1,0 +1,84 @@
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body > div{
+    background-color: #eee;
+    width: 900px;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+section div {
+    background-color: tomato;
+    color: white;
+    font-size: 20px;
+}
+
+.grid{
+    display: grid;
+    gap: 10px;
+}
+.logo {
+    grid-area: logo;
+    padding: 20px;
+}
+
+.nav{
+    grid-area: nav;
+    padding: 20px;
+}
+
+.content{
+    grid-area: content;
+    height: 300px;
+}
+
+.sidenav{
+    grid-area: sidenav;
+}
+
+.advert{
+    grid-area: advert;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 10px;
+}
+
+.grid-template-areas-1 {
+    grid-template-areas: 
+    'logo nav nav nav'
+    'sidenav content content advert'
+    'sidenav footer footer footer'
+    ;
+}
+
+/*
+
+===== layout-1 ======
+
+atraves do estrutura do html, usando class, percebemos que podemos estruturar de forma facil o layout.
+usando o display: grid; -> no pai, podemos usar o sistema de grid.
+gap: 10px; -> coloca o valor em px para poder separar uma coluna e linha da outra;
+
+na classe pai, daremos como valor o "grid-template-areas:" -> recebe valor em texto (se colocar numero não fun
+suina),
+
+cada aspas ou aspas-simples separam uma coluna e linha:
+
+'logo nav nav nav' -> uma linha, quer dizer que são qualtro colunas, 
+o "nav" ocupa 4 colunas e "logo" uma coluna.
+
+'sidenav content content advert' -> mais uma linha, sidenav uma coluna
+
+
+*/
