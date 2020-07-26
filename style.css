@@ -61,24 +61,3 @@ section div {
     'sidenav footer footer footer'
     ;
 }
-
-/*
-
-===== layout-1 ======
-
-atraves do estrutura do html, usando class, percebemos que podemos estruturar de forma facil o layout.
-usando o display: grid; -> no pai, podemos usar o sistema de grid.
-gap: 10px; -> coloca o valor em px para poder separar uma coluna e linha da outra;
-
-na classe pai, daremos como valor o "grid-template-areas:" -> recebe valor em texto (se colocar numero não fun
-suina),
-
-cada aspas ou aspas-simples separam uma coluna e linha:
-
-'logo nav nav nav' -> uma linha, quer dizer que são qualtro colunas, 
-o "nav" ocupa 4 colunas e "logo" uma coluna.
-
-'sidenav content content advert' -> mais uma linha, sidenav uma coluna
-
-
-*/
