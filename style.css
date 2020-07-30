@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    color: #00252e;
+}
+
+/* 
+
+tamanho display:
+Desktop: 1440px
+Mobile: 375px
+
+cores:
+Primarias
+ff66c8 - pink hsl
+
+naturais:
+00252e - Very Dark Cyan
+f5faff - Very Pale Blue
+
+
+corpo:
+font-family: 'Open Sans', sans-serif;
+
+cabeçalho:
+font-family: 'Poppins', sans-serif;
+
+*/
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+nav .btn_login{
+    height: 40px;
+    border: 1px solid #ff66c8;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+}
+
+nav .btn_login a {
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px 28px;
+    text-decoration: none;
+    color: #ff66c8;
+}
+
+section.info{
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: 54px;
+    text-align: center;
+    padding: 80px 80px 58px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section.info h1 {
+    font-size: 52px;
+}
+
+section.info > div {
+    max-width: 636px;
+    margin: 0 auto;
+    margin-top: 34px;
+    font-size: 20px;
+}
+
+section.info button{
+    margin-top: 52px;
+    font-size: 22px;
+    color: white;
+    background-color: #ff66c8;
+    padding: 24px 100px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px -4px #00252e;
+}
+
+section.info_imagens{
+    margin: 68px 0;
+    display: grid;
+    grid-template-areas: 'a a' 'b c';
+}
+
+section.info_imagens > img{
+    grid-area: a;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 56px;
+}
+
+.card_info{
+    margin: 0 auto;
+    margin-top: 56px;
+}
+
+.card_info h3{
+    font-size: 72px;
+}
+
+.card_info p {
+    font-size: 20px;
+    color: #00252e83;
+    font-weight: 300;
+    text-align: center;
+}
+
+.grow::after{
+    content: " ";
+    height: 880px;
+    width: 100%;
+    background: url("images/illustration-flowing-conversation.svg") no-repeat;
+}
+
+.grow{
+    height: 400px;
+}
+
