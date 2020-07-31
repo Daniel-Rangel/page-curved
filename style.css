@@ -127,11 +127,13 @@ section.info_imagens > img{
 */
 
 .grow{
+    margin: 0 auto;
     margin-top: 64px;
     max-width: 1440px;
     min-height: 534px;
     position: relative;
     padding-top: 164px;
+
 }
 
 .grow > div{
