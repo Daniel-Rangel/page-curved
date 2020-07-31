@@ -6,6 +6,7 @@
     border: none;
     box-sizing: border-box;
     color: #00252e;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* 
@@ -52,7 +53,6 @@ nav .btn_login{
 }
 
 nav .btn_login a {
-    font-family: 'Open Sans', sans-serif;
     padding: 8px 28px;
     text-decoration: none;
     color: #ff66c8;
@@ -64,11 +64,12 @@ section.info{
     margin-top: 54px;
     text-align: center;
     padding: 80px 80px 58px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 section.info h1 {
     font-size: 52px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
 }
 
 section.info > div {
@@ -81,6 +82,7 @@ section.info > div {
 section.info button{
     margin-top: 52px;
     font-size: 22px;
+    font-weight: 700;
     color: white;
     background-color: #ff66c8;
     padding: 24px 100px;
@@ -107,7 +109,8 @@ section.info_imagens > img{
 }
 
 .card_info h3{
-    font-size: 72px;
+    font-size: 68px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card_info p {
@@ -117,14 +120,56 @@ section.info_imagens > img{
     text-align: center;
 }
 
-.grow::after{
-    content: " ";
-    height: 880px;
-    width: 100%;
-    background: url("images/illustration-flowing-conversation.svg") no-repeat;
+/*.grow::after{
+    content: "";
+    background-image: url("images/bg-footer-top-mobile.svg");
 }
+*/
 
 .grow{
-    height: 400px;
+    margin-top: 64px;
+    max-width: 1440px;
+    min-height: 534px;
+    position: relative;
+    padding-top: 164px;
+}
+
+.grow > div{
+    padding: 0 132px;
+    font-family: 12px;
+    background-color: #f6fbff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.texto_grow::before{
+    content: " ";
+    height: 300px;
+    width: 100%;
+    background: url('images/bg-section-top-desktop-1.svg') no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;    
+}
+
+.texto_grow::after{
+    content: " ";
+    height: 100px;
+    width: 100%;
+    background: url("images/bg-section-bottom-desktop-1.svg") no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+}
+.texto_grow h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 32px;
+}
+
+.img_grow img {
+    width: 100%;
 }
 
