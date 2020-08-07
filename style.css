@@ -121,13 +121,10 @@ section.info_imagens > img{
     text-align: center;
 }
 
-/*.grow::after{
-    content: "";
-    background-image: url("images/bg-footer-top-mobile.svg");
-}
-*/
 
-.grow, .fluwing {
+.grow,
+.fluwing,
+.users {
     margin: 0 auto;
     margin-top: 64px;
     max-width: 1440px;
@@ -137,7 +134,8 @@ section.info_imagens > img{
 }
 
 .grow > div, 
-.fluwing > div {
+.fluwing > div,
+.users > div {
     padding: 0 132px;
     font-family: 12px;
     background-color: #f6fbff;
@@ -146,14 +144,15 @@ section.info_imagens > img{
     align-items: center;
 }
 
-.texto_grow::before{
+.texto_grow::before,
+.texto_users::before{
     content: " ";
     height: 300px;
     width: 100%;
     background: url('images/bg-section-top-desktop-1.svg') no-repeat;
     position: absolute;
     left: 0;
-    top: 0;    
+    top: 0;
 }
 
 .texto_grow::after{
@@ -166,7 +165,8 @@ section.info_imagens > img{
     bottom: -144px;
 }
 .texto_grow h2,
-.fluwing h2{
+.fluwing h2,
+.users h2{
     font-size: 32px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
@@ -174,10 +174,11 @@ section.info_imagens > img{
 }
 
 .img_grow img, 
-.fluwing img {
+.fluwing img,
+.users img {
     width: 100%;
 }
-
+/* section fluwing */
 .fluwing{
     padding: 0;
     margin-top: 232px;
@@ -187,6 +188,27 @@ section.info_imagens > img{
     background-color: white;
 }
 
+.fluwing .img_flui{
+    margin: 28px 28px 28px 0;
+}
+
 .texto_flui{
     padding-left: 52px;
+}
+
+.texto_flui p{
+    font-size: 15px;
+    padding-left: 0;
+}
+
+/* section user */
+
+.users{
+    margin-top: 120px;
+    padding-top: 0;
+}
+
+.texto_users::before{
+    background: url("images/bg-section-top-desktop-2.svg") no-repeat;
+    top: -156px;
 }
