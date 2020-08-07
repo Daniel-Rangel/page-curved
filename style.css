@@ -145,7 +145,7 @@ section.info_imagens > img{
 }
 
 .texto_grow::before,
-.texto_users::before{
+.users > div::before{
     content: " ";
     height: 300px;
     width: 100%;
@@ -155,7 +155,8 @@ section.info_imagens > img{
     top: 0;
 }
 
-.texto_grow::after{
+.texto_grow::after,
+.users > div::after{
     content: " ";
     height: 144px;
     width: 100%;
@@ -178,6 +179,15 @@ section.info_imagens > img{
 .users img {
     width: 100%;
 }
+
+.img_grow,
+.img_users{
+    margin: 28px 0 28px 48px;
+}
+
+
+
+
 /* section fluwing */
 .fluwing{
     padding: 0;
@@ -189,16 +199,15 @@ section.info_imagens > img{
 }
 
 .fluwing .img_flui{
-    margin: 28px 28px 28px 0;
+    margin: 28px 48px 28px 0;
 }
 
 .texto_flui{
-    padding-left: 52px;
+    padding-left: 28px;
 }
 
 .texto_flui p{
-    font-size: 15px;
-    padding-left: 0;
+    font-size: 16px;
 }
 
 /* section user */
@@ -208,7 +217,19 @@ section.info_imagens > img{
     padding-top: 0;
 }
 
-.texto_users::before{
+.texto_users p{
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+
+.users > div::before{
     background: url("images/bg-section-top-desktop-2.svg") no-repeat;
     top: -156px;
+}
+
+
+.users > div::after{
+    background: url("images/bg-section-bottom-desktop-2.svg") no-repeat;
+    bottom: -24px;
 }
