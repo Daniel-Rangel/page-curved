@@ -64,7 +64,7 @@ section.info{
     margin: 0 auto;
     margin-top: 54px;
     text-align: center;
-    padding: 80px 80px 58px;
+    padding: 80px 48px 58px;
 }
 
 section.info h1 {
@@ -80,8 +80,10 @@ section.info > div {
     font-size: 20px;
 }
 
-section.info button{
+section.info button,
+.msg_btn a{
     margin-top: 52px;
+    margin-bottom: 32px;
     font-size: 22px;
     font-weight: 700;
     color: white;
@@ -124,7 +126,8 @@ section.info_imagens > img{
 
 .grow,
 .fluwing,
-.users {
+.users,
+.msg_btn {
     margin: 0 auto;
     margin-top: 64px;
     max-width: 1440px;
@@ -233,3 +236,21 @@ section.info_imagens > img{
     background: url("images/bg-section-bottom-desktop-2.svg") no-repeat;
     bottom: -24px;
 }
+
+/* section msg_btn */
+
+.msg_btn {
+    text-align: center;
+}
+
+.msg_btn h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.msg_btn a{
+    margin-top: 24px;
+    display: inline-block;
+    text-decoration: none;
+}   
