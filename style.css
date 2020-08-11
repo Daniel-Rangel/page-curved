@@ -234,7 +234,7 @@ section.info_imagens > img{
 
 .users > div::after{
     background: url("images/bg-section-bottom-desktop-2.svg") no-repeat;
-    bottom: -24px;
+    bottom: -72px;
 }
 
 /* section msg_btn */
@@ -253,4 +253,4 @@ section.info_imagens > img{
     margin-top: 24px;
     display: inline-block;
     text-decoration: none;
-}   
+}
