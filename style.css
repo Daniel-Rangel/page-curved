@@ -311,3 +311,22 @@ footer::before{
     padding-right: 58px;
     background: url("images/logo.svg") no-repeat;
 }
+
+.huddler p{
+    margin: 20px 0;
+}
+
+.huddler p i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+ul li {
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: 20px;
+}
+
+ul li i{
+    font-size: 36px;
+} 
