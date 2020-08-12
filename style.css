@@ -60,7 +60,8 @@ nav .btn_login a {
     color: #ff66c8;
 }
 
-section.info{
+section.info,
+footer .foot{
     max-width: 1180px;
     margin: 0 auto;
     margin-top: 54px;
@@ -233,7 +234,7 @@ footer::before{
 
 .users > div::after{
     background: url("images/bg-section-bottom-desktop-2.svg") no-repeat;
-    bottom: -72px;
+    bottom: -44px;
 }
 
 /* section msg_btn */
@@ -259,14 +260,18 @@ footer::before{
 footer{
     background-color: #00252e;
     position: relative;
+    margin-top: 160px;
 }
+
 footer .foot{
+    text-align: initial;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .foot h2{
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .foot p {
@@ -277,8 +282,32 @@ footer .foot{
     color: white;
 }
 
+.foot i{
+    color: white;
+}
+
+
 footer::before{
     background: url("images/bg-footer-top-desktop.svg") no-repeat;
     top:-158px;
     height: 158px;
+}
+
+.huddler{
+    max-width: 328px;
+}
+
+.huddler h2{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.huddler h2 span{
+    display: inline-block;
+    width: 52px;
+    height: 40px;
+    padding-right: 58px;
+    background: url("images/logo.svg") no-repeat;
 }
