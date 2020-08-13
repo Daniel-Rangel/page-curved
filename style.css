@@ -149,7 +149,7 @@ section.info_imagens > img{
     align-items: center;
 }
 
-.texto_grow::before,
+.grow > div::before,
 .users > div::before,
 footer::before{
     content: " ";
@@ -161,7 +161,7 @@ footer::before{
     top: 0;
 }
 
-.texto_grow::after,
+.grow > div::after,
 .users > div::after{
     content: " ";
     height: 144px;
@@ -371,4 +371,42 @@ form button{
     border-radius: 5px;
     background-color: #ff66c8;
     color: white;
+}
+
+/* responcivo */
+
+
+/* @media screen  and (max-width: 767PX) and (min-width: 426PX){
+    .grow > div::after{
+        bottom: 0px;
+    }
+    .users > div::after{
+        bottom: 176px;
+    }
+
+} */
+
+
+@media screen and (max-width: 767px) and (min-width: 498px){
+    .grow > div::after{
+        bottom: 0px;
+    }
+    .users > div::after{
+        bottom: 176px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    nav{
+        padding: 40px 16px;
+    }
+    .grow > div::after{
+        bottom: -94px;
+    }
+    .users > div::after{
+        bottom: 80px;
+    }
+    footer::before{
+        top: -156PX;
+    }
 }
