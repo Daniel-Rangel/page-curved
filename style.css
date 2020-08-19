@@ -375,28 +375,7 @@ form button{
 
 /* responcivo */
 
-
-/* @media screen  and (max-width: 767PX) and (min-width: 426PX){
-    .grow > div::after{
-        bottom: 0px;
-    }
-    .users > div::after{
-        bottom: 176px;
-    }
-
-} */
-
-
-@media screen and (max-width: 767px) and (min-width: 498px){
-    .grow > div::after{
-        bottom: 0px;
-    }
-    .users > div::after{
-        bottom: 176px;
-    }
-}
-
-@media screen and (max-width: 1024px) and (min-width: 768px){
+@media (max-width: 1024px){
     nav{
         padding: 40px 16px;
     }
@@ -404,9 +383,19 @@ form button{
         bottom: -94px;
     }
     .users > div::after{
-        bottom: 80px;
+        bottom: 86px;
     }
     footer::before{
         top: -156PX;
     }
+}
+
+@media (max-width: 667PX){
+    .grow > div::after{
+        bottom: 0px;
+    }
+    .users > div::after{
+        bottom: 176px;
+    }
+
 }
