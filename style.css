@@ -395,14 +395,14 @@ form button{
     .users > div,
     .fluwing > div,
     .grow > div {
-        padding: 0 26px;
+        padding: 0 36px;
     }
     .grow > div::after{
         bottom: -56px;
     }
 
     .users > div::after{
-        bottom: 108px;
+        bottom: 116px;
     }
 
     form {
@@ -416,7 +416,7 @@ form button{
     }
 
     form button{
-        margin-top: 36px;
+        margin-top: 32px;
         width: 100%;
     }
 }
