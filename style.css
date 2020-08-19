@@ -390,12 +390,33 @@ form button{
     }
 }
 
-@media (max-width: 667PX){
-    .grow > div::after{
-        bottom: 0px;
+@media (max-width: 768PX){
+
+    .users > div,
+    .fluwing > div,
+    .grow > div {
+        padding: 0 26px;
     }
-    .users > div::after{
-        bottom: 176px;
+    .grow > div::after{
+        bottom: -56px;
     }
 
+    .users > div::after{
+        bottom: 108px;
+    }
+
+    form {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    form input{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    form button{
+        margin-top: 36px;
+        width: 100%;
+    }
 }
