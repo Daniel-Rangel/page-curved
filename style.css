@@ -489,4 +489,43 @@ form button{
     .msg_btn h2 {
         font-size: 34px;
     }
+
+    footer::before{
+        top: -60px;
+        background: url("images/bg-footer-top-mobile.svg") no-repeat;
+        background-size: 100%;
+    }
+
+    footer .foot{
+        grid-template-areas: 'a' 'b';
+    }
+
+    .huddler{
+        grid-area: b;
+    }
+
+    .huddler h2{
+        margin-top: 50px;
+    }
+
+    ul li{
+        margin-top: 30px;
+    }
+
+    .huddler-letter{
+        grid-area: a;
+        position: relative;
+    }
+
+    .huddler-letter input{
+        margin-bottom: 10px;
+    }
+
+    .huddler-letter button{
+        width: 50%;
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }
