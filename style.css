@@ -420,3 +420,73 @@ form button{
         width: 100%;
     }
 }
+
+@media (max-width: 480px){
+    section.info h1{
+        font-size: 32px;
+    }
+
+    section.info > div {
+        font-size: 16px;
+    }
+
+    section.info button, 
+    .msg_btn a{
+        padding: 24px 72px;
+        font-size: 18px;
+    }
+
+    section.info_imagens{
+        grid-template-areas: 'a' 'b' 'c' ;
+    }
+    
+    .grow > div, 
+    .fluwing > div,
+    .users > div {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .texto_grow h2,
+    .texto_flui h2,
+    .users h2{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 0;
+    }
+
+    .grow > div::before{
+        top: 38px;
+        background: url("images/bg-section-top-mobile-1.svg") no-repeat;
+        background-size: 100%;
+    }
+
+    .grow > div::after{
+        bottom: -140px;
+        background: url("images/bg-section-bottom-mobile-1.svg") no-repeat;
+        background-size: 100%;
+    }
+
+    .img_grow,
+    .img_users,
+    .fluwing .img_flui{
+        margin: 0;
+    }
+
+    .users > div::before{
+        top: -116px;
+        background: url("images/bg-section-top-mobile-2.svg") no-repeat;
+        background-size: 100%;
+    }
+
+    .users > div::after{
+        bottom: -48px;
+        background: url("images/bg-section-bottom-mobile-2.svg") no-repeat;
+        background-size: 100%;
+    }
+
+    .msg_btn h2 {
+        font-size: 34px;
+    }
+}
