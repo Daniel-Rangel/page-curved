@@ -551,3 +551,13 @@ form button{
         right: 0;
     }
 }
+
+@media (max-width: 375px){
+    section.info{
+        margin: 0;
+    }
+
+    section.info h1{
+        font-size: 24px;
+    }
+}
