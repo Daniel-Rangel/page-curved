@@ -46,6 +46,14 @@ nav{
     padding: 40px 0;
 }
 
+nav .logo{
+    max-width: 240px;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
 nav .btn_login{
     height: 40px;
     border: 1px solid #ff66c8;
@@ -356,7 +364,7 @@ form {
 }
 
 form input {
-    width: 320px;
+    max-width: 320px;
     font-size: 20px;
     margin-right: 40px;
     padding: 16px;
@@ -422,6 +430,15 @@ form button{
 }
 
 @media (max-width: 480px){
+    nav .logo {
+        width: 50%;
+    }
+
+    nav .btn_login a {
+        padding: 4px 20px;
+        font-size: 14px;
+    }
+
     section.info h1{
         font-size: 32px;
     }
@@ -448,6 +465,11 @@ form button{
         padding-bottom: 10px;
     }
 
+    .texto_grow,
+    .texto_users{
+        padding: 30px 0;
+    }
+
     .texto_grow h2,
     .texto_flui h2,
     .users h2{
@@ -456,8 +478,8 @@ form button{
         padding: 0;
     }
 
-    .grow > div::before{
-        top: 38px;
+    .grow::before{
+        top: 0%;
         background: url("images/bg-section-top-mobile-1.svg") no-repeat;
         background-size: 100%;
     }
@@ -475,13 +497,13 @@ form button{
     }
 
     .users > div::before{
-        top: -116px;
+        top: -22%;
         background: url("images/bg-section-top-mobile-2.svg") no-repeat;
         background-size: 100%;
     }
 
     .users > div::after{
-        bottom: -48px;
+        bottom: -19.2%;
         background: url("images/bg-section-bottom-mobile-2.svg") no-repeat;
         background-size: 100%;
     }
