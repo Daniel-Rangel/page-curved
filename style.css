@@ -161,7 +161,7 @@ section.info_imagens > img{
 .users > div::before,
 footer::before{
     content: " ";
-    height: 300px;
+    height: 166px;
     width: 100%;
     background: url('images/bg-section-top-desktop-1.svg') no-repeat;
     position: absolute;
@@ -498,6 +498,7 @@ form button{
 
     .users > div::before{
         top: -22%;
+        height: 170px;
         background: url("images/bg-section-top-mobile-2.svg") no-repeat;
         background-size: 100%;
     }
@@ -560,4 +561,35 @@ form button{
     section.info h1{
         font-size: 24px;
     }
+
+    section.info button,
+    .msg_btn a{
+        padding: 20px 48px;
+        font-size: 16px;
+    }
+
+    section.info > div{
+        font-size: 14px;
+    }
+
+    .texto_grow p,
+    .fluwing p,
+    .users p{
+        font-size: 14px;
+    }
+    .users > div::before{
+        top: -19.2%;
+        background: url("images/bg-section-top-mobile-2.svg") no-repeat;
+    }
+    .users > div::after{
+        bottom: -12.2%;
+        background: url("images/bg-section-bottom-mobile-2.svg") no-repeat;
+    }
+
+    footer::before {
+        top: -52px;
+        background: url("images/bg-footer-top-mobile.svg") no-repeat;
+        background-size: 100%;
+    }
+
 }
