@@ -407,6 +407,13 @@ form button{
     }
 
     /* grow */
+    .grow > div::after{
+        bottom: -18%
+    }
+
+    .users > div::after{
+        bottom: 18%
+    }
 }
 
 
