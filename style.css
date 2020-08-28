@@ -249,9 +249,6 @@ footer::before{
 
 /* section msg_btn */
 
-.msg_btn {
-}
-
 .msg_btn > div{
     min-height: 350px;
     text-align: center;
@@ -414,7 +411,10 @@ form button{
     }
 
     /* grow */
-    .grow >div{
+    .grow >div,
+    .fluwing > div,
+    .users > div,
+    .msg_btn{
         width: 90%;
         margin: 20% auto;
     }
@@ -438,4 +438,59 @@ form button{
     }
 }
 
+@media (max-width: 768px){
+    .grow > div,
+    .fluwing > div,
+    .users > div{
+        padding: 0;
+    }
+
+    .grow > div::before{
+        top: -56%
+    }
+
+    .grow > div::after{
+        bottom: -50% !important;
+    }
+
+    .users > div::after{
+        bottom: -54% !important;
+    }
+
+    .img_grow,
+    .img_users{
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .msg_btn h2{
+        font-size: 2.52em;
+    }
+
+    .huddler{
+        padding-right: 10px;
+    }
+
+    ul li{
+        margin-top: 0;
+    }
+
+    form {
+        min-height: 100px;
+        display: block;
+    }
+
+    form input{
+        max-width: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    form button{
+        float: right;
+        width: 50%;
+    }
+   
+}
 
