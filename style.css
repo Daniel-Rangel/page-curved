@@ -495,6 +495,24 @@ form button{
 }
 
 @media (max-width: 425px){
+
+    .logo{
+        width: 44%;
+    }
+
+    nav .btn_login{
+        height: 32px;
+    }
+
+    nav .btn_login a{
+        padding: 8px 28px;
+    }
+
+    section.info h1, 
+    .msg_btn h2{
+        font-size: 2.2em;
+    }
+
     section.info_imagens{
         grid-template-areas: 'a' 'b' 'c';
     }
@@ -528,6 +546,43 @@ form button{
         margin-right: 0;
     }
 
+    .grow > div::before{
+        background: url("./images/bg-section-top-mobile-1.svg") no-repeat;
+        background-size: 100%;
+        top: -23%;
+    }
+
+    .grow > div::after{
+        background: url('./images/bg-section-bottom-mobile-1.svg') no-repeat;
+        background-size: 100%;
+        bottom: -29% !important;
+    }
+
+    .texto_flui{
+        margin-top: 10%;
+        padding-left: 0;
+    }
+
+    .fluwing p {
+        margin-bottom: 20%;
+    }
+
+    .users > div::before{
+        background: url("./images/bg-section-top-mobile-2.svg") no-repeat;
+        background-size: 100%;
+        top: -24.8%;
+    }
+
+    .users > div::after{
+        background: url("./images/bg-section-bottom-mobile-2.svg") no-repeat;
+        background-size: 100%;
+        bottom: -31% !important;
+    }
+
+    .msg_btn > div {
+        margin: 40% 0 -30% 0;
+    }
+
     footer > div.foot{
         grid-template-columns: 1fr;
         grid-template-areas: 'b1' 'b2';
@@ -536,5 +591,11 @@ form button{
     footer .huddler-letter{
         grid-area: b1;
         margin-bottom: 20%;
+    }
+
+    footer::before {
+        background: url('./images/bg-footer-top-mobile.svg') no-repeat;
+        background-size: 100%;
+        top: -5%;
     }
 }
