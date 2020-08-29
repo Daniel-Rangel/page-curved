@@ -494,3 +494,47 @@ form button{
    
 }
 
+@media (max-width: 425px){
+    section.info_imagens{
+        grid-template-areas: 'a' 'b' 'c';
+    }
+
+    section.info_imagens > img {
+        grid-area: a;
+        margin: 0;
+        width: 100%;
+    }
+
+    .grow > div,
+    .fluwing > div,
+    .users > div{
+        grid-template-columns: 1fr ;
+        grid-template-areas: 'a1' 'a2' ;
+    }
+    
+    .texto_grow,
+    .texto_users{
+        grid-area: a2;
+        padding-top: 5%;
+        text-align: center;
+    }
+    
+    .texto_grow h2,
+    .texto_users h2{
+        margin-bottom: 20px;
+    }
+
+    .texto_users p{
+        margin-right: 0;
+    }
+
+    footer > div.foot{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'b1' 'b2';
+    }
+
+    footer .huddler-letter{
+        grid-area: b1;
+        margin-bottom: 20%;
+    }
+}
