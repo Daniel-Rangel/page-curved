@@ -561,6 +561,7 @@ form button{
     .texto_flui{
         margin-top: 10%;
         padding-left: 0;
+        text-align: center;
     }
 
     .fluwing p {
@@ -598,4 +599,50 @@ form button{
         background-size: 100%;
         top: -5%;
     }
+}
+@media (max-width: 375px){
+
+    .logo{
+        width: 48%;
+    }
+
+    section.info h1,
+    .msg_btn h2,
+    .grow h2,
+    .fluwing h2,
+    .users h2{
+        font-size: 1.8em;
+    }
+
+    section.info > div p{
+        font-size: 0.9em;
+    }
+
+    section.info button,
+    .msg_btn a {
+        padding: 20px 88px;
+    }
+
+    .grow,
+    .fluwing,
+    .msg_btn {
+        margin-top: 40%;
+    }
+
+    .grow > div::after{
+        height: 56px;
+        bottom: -12% !important;
+    }
+
+    
+    .users > div::before {
+        height: 104px;
+        top: -24%;
+    }
+
+    .users > div::after {
+        height: 106px;
+        bottom: -25% !important;
+    }
+    
 }
