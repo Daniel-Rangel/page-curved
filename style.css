@@ -621,6 +621,7 @@ form button{
     section.info button,
     .msg_btn a {
         padding: 20px 80px;
+        font-size: 0.9em;
     }
 
     .grow,
